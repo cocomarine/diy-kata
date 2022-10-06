@@ -8,4 +8,13 @@ describe("booleanToWord", () => {
   test("retrun No when passed false", () => {
     expect(booleanToWord(5)).toEqual('No');
   });
+
+  test("retrun No when passed false", () => {
+    expect(booleanToWord('true')).toEqual('No');
+  });
+
+  test("retrun No when passed false", () => {
+    expect(booleanToWord(true)).toEqual('Yes');
+  });
+
 });
